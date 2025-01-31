@@ -12,10 +12,10 @@ app.use("/", express.static("uploads"));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 if (process.env.NODE_ENV !== "PRODUCTION") {
     require("dotenv").config({
-        path: "backend/config/.env",
+        path: "./config/.env",
     });
 };
-const user = require("./controller/user");
+const user = require("./Controller/user");
 app.use("/api/v2/user", user);
 app.use(ErrorHandler);
 module.exports = app;
