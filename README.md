@@ -50,3 +50,8 @@ In this milestone, we implemented user login authentication by validating creden
 
 ## Milestone 8 :
 In this milestone, we created a home page for the e-commerce website. The page displays a list of products with their details, including images, names, descriptions, and prices. Users can click on a product to view more information or add it to their cart. This page provides a user-friendly interface for browsing and selecting products. 
+
+## Milestone 9 :
+In this milestone, we created a product page for the e-commerce website. The page displays a list of products with their details, including images, names, descriptions, and prices. Users can click on a product to view more information or add it to their cart. This page provides a user-friendly interface for browsing and selecting products.  
+
+

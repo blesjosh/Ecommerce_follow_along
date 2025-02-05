@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const User = require("../model/user");
+const User = require("../Model/user");
 const router = express.Router();
 const { upload } = require("../multer");
 const ErrorHandler = require("../utils/ErrorHandler");
@@ -61,12 +61,14 @@ router.post("/login", catchAsyncErrors(async (req, res, next) => {
     console.log("At Auth", "Password: ", password, "Hash: ", user.password);
     if (!isPasswordMatched) {
         return next(new ErrorHandler("Invalid Email or Password", 401));
-    }
+    }1
     user.password = undefined;
     res.status(200).json({
         success: true,
         user,
     });
 }));
+
+
 
 module.exports = router;
