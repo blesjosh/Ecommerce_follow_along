@@ -1,14 +1,13 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const User = require("../Model/user");
+const User = require("../model/user");
 const router = express.Router();
 const { upload } = require("../multer");
-const ErrorHandler = require("../utils/ErrorHandler");
-const catchAsyncErrors = require("../middleware/catchAsynErrors");
+const ErrorHandler = require("../utlis/errorHandler");
+const catchAsyncErrors = require("../middleware/CatchAsynError");
 const bcrypt = require("bcryptjs");
 require("dotenv").config();
-
 
 router.post("/create-user", upload.single("file"), catchAsyncErrors(async (req, res, next) => {
     console.log("Creating user...");
@@ -61,7 +60,7 @@ router.post("/login", catchAsyncErrors(async (req, res, next) => {
     console.log("At Auth", "Password: ", password, "Hash: ", user.password);
     if (!isPasswordMatched) {
         return next(new ErrorHandler("Invalid Email or Password", 401));
-    }1
+    }
     user.password = undefined;
     res.status(200).json({
         success: true,
@@ -69,6 +68,4 @@ router.post("/login", catchAsyncErrors(async (req, res, next) => {
     });
 }));
 
-
-
-module.exports = router;
+module.exports = router;
