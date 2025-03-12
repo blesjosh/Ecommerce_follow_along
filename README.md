@@ -93,3 +93,21 @@ Implement a responsive navigation bar using React and Tailwind CSS to enable smo
 
 ## 🌟 Milestone 16: 
 In this milestone, we create a product details page displaying all product data, including description, category, price, and tags, with quantity selection and an Add to Cart button. 🚀
+
+## 🌟 Milestone 17: 
+In this milestone, we implemented the backend functionality to add products to a cart and store them in the database. This feature allows users to add products to their cart, which persists in the database for future access.
+
+## 🌟 Milestone 18: 
+In this milestone, we implemented the backend functionality to add products to the user's cart and store them in the database.
+
+## 🌟 Milestone 19: 
+In this milestone, we create an frontend page UI for cart and write an endpoint to increase and decrease the quantity of product inside cart
+
+## 🌟 Milestone 20: 
+In this milestone , we will profile page frontend and write an endpoint to receive user data and display.
+
+## 🌟 Milestone 21: 
+In this milestone , we will create an frontend page form for address input.
+
+## 🌟 Milestone 22: 
+In this milestone , we will create an backend endpoint that will save the address inside user profile in database.
