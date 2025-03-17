@@ -111,3 +111,6 @@ In this milestone , we will create an frontend page form for address input.
 
 ## 🌟 Milestone 22: 
 In this milestone , we will create an backend endpoint that will save the address inside user profile in database.
+
+## 🌟 Milestone 23: 
+In this milestone , we will create an frontend page for address selection and write an endpoint to fetch all the address of a user and display it on the frontend page.
