@@ -155,3 +155,11 @@ Fetch the order using this order_id, update its status to "Canceled", and save t
 
 ## ⭐ Milestone 29:
 In this Milestone , we will learn how to add online payment gateway to our application using Paypal api.
+
+## ⭐ Milestone 30: Integrate PayPal Payment Gateway  
+Building on the foundation of previous milestones, we successfully integrated an online payment gateway using the PayPal API. This involved creating a sandbox account, implementing the `react-paypal-js` package, and enabling users to make payments via credit or debit cards.  
+
+---
+
+## ⭐ Milestone 31: Implement Redux for Global State Management  
+Following the structured approach from earlier milestones, we implemented Redux to manage the global state. This included setting up a Redux store, creating actions and reducers for user email management, and wrapping the `App` component with the `Provider` to enable state sharing across the application.
