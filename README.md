@@ -56,7 +56,7 @@ Set up dedicated folders for organizing backend code effectively. Initialized an
 
 ## 🌟  Milestone 4
 
-created a User Model to define how user data is structured in the database also developed a User Controller to manage user interactions, like adding or retrieving data. Additionally, configured Multer to handle file uploads, allowing users to store files such as images.
+created a User Model to define how user data is structured in the database also developed a User Controller to manage user interactions, like adding or retrieving data. Additionally, configured Multer to handle file uploads, allowing users to store files such as images.
 
 ## 🌟  Milestone 5: 
 In this milestone, I built the Sign-Up page for user registration using HTML and CSS. I implemented form validation to ensure valid inputs, like email format and password security. This enhances user experience and prevents errors. All changes have been committed and pushed to the repository.  
@@ -71,7 +71,7 @@ In this milestone, we implemented user login authentication by validating creden
 In this milestone, we created a reusable product card component and designed a homepage to display multiple cards dynamically. The component receives product details as props and is rendered using array mapping. This improves UI consistency, enhances user experience, and maintains an organized layout for showcasing products effectively. 🚀
 
 ## 🌟  Milestone 9
-In this milestone, we created a product page for the e-commerce website. The page displays a list of products with their details, including images, names, descriptions, and prices. Users can click on a product to view more information or add it to their cart. This page provides a user-friendly interface for browsing and selecting products.
+In this milestone, we created a product page for the e-commerce website. The page displays a list of products with their details, including images, names, descriptions, and prices. Users can click on a product to view more information or add it to their cart. This page provides a user-friendly interface for browsing and selecting products.
 
 ## 🌟  Milestone 10
 In this milestone, we created an API to allow product creation with image uploads using Multer. The images are stored in the uploads/ directory, and product data, including image paths, is saved to MongoDB for efficient storage and retrieval.
@@ -113,4 +113,45 @@ In this milestone , we will create an frontend page form for address input.
 In this milestone , we will create an backend endpoint that will save the address inside user profile in database.
 
 ## 🌟 Milestone 23: 
-In this milestone , we will create an frontend page for address selection and write an endpoint to fetch all the address of a user and display it on the frontend page.
+In this milestone , we will make our create an select address page in frontend and we will write product schema for the orders in the backend.
+
+## 🌟 Milestone 24: 
+In this milestone ,  we will make our create an order conformation page in frontend where will display products ordering and address selected and total price details.
+
+## ⭐ Milestone 25: Store Order Details in Database
+Created an API endpoint to receive product, user, and address details.
+Retrieved the _id of the user using their email.
+For each product, an individual order was created with the same address.
+Stored order details in MongoDB using the existing order schema.
+
+## ⭐ Milestone 26: Retrieve User Orders
+Created an API endpoint to receive the user's email.
+Retrieved the _id of the user using their email.
+Fetched all orders related to that user using their _id.
+Sent the user's order history in the response.
+
+## ⭐ Milestone 27: Create My Orders Page
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create a frontend page that will display all the user orders.
+Steps for Milestone 27 📝
+Create a My Orders page.
+Send a GET request to the my-orders endpoint created in the previous milestone.
+Pass the user's email to the endpoint to fetch all user orders.
+Display all the retrieved user orders on the page.
+Add the My Orders page to the navbar for better navigation.
+
+## ⭐ Milestone 28: Cancel Order Feature
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Allow users to cancel their placed orders.
+Steps for Milestone 28 📝
+In the My Orders page, add a "Cancel Order" button for each order.
+If an order is already canceled, the button should not be displayed.
+Create an API endpoint that will receive the order_id.
+Fetch the order using this order_id, update its status to "Canceled", and save the changes.
+
+## ⭐ Milestone 29:
+In this Milestone , we will learn how to add online payment gateway to our application using Paypal api.

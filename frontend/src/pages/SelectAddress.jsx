@@ -1,4 +1,4 @@
-// SelectAddress.jsx
+
 import React, { useState, useEffect } from 'react';
 import Nav from '../components/navbar'; 
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ const SelectAddress = () => {
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
-    const userEmail = 'blessing.joshua.s76@kalvium.community'; 
+    const userEmail = 'srimandgl2004@gmail.com'; 
 
 
     useEffect(() => {
@@ -46,9 +46,9 @@ const SelectAddress = () => {
         fetchAddresses();
     }, [userEmail]);
 
-    // const handleSelectAddress = (addressId) => {
-    //     navigate('/order-confirmation', { state: { addressId, email: userEmail } });
-    // };
+    const handleSelectAddress = (addressId) => {
+        navigate('/order-confirmation', { state: { addressId, email: userEmail } });
+    };
 
     if (loading) {
         return (
@@ -110,4 +110,4 @@ const SelectAddress = () => {
     );
 };
 
-export default SelectAddress;
+export default SelectAddress;
